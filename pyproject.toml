@@ -1,0 +1,18 @@
+[project]
+name = "e-colles-scrapper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "odfpy>=1.4.1",
+    "python-dotenv>=1.2.2",
+    "typer>=0.24.1",
+]
+
+[project.scripts]
+kholles = "kholles.main:main"
+
+[tool.uv]
+package = true
